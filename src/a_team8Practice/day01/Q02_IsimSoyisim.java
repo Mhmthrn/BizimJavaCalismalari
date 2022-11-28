@@ -1,4 +1,4 @@
-package a_team8Practice.Day01;
+package a_team8Practice.day01;
 
 public class Q02_IsimSoyisim {
     /*

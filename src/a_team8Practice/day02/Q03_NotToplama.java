@@ -1,4 +1,4 @@
-package a_team8Practice.Day02;
+package a_team8Practice.day02;
 
 public class Q03_NotToplama {
     /*
