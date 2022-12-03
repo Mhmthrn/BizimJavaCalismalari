@@ -66,8 +66,6 @@ public class Q01 {
 
         } else {
             System.out.println("ayni gun dogmussunuz");
-
-
         }
 
     }
