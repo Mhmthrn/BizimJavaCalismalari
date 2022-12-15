@@ -13,7 +13,7 @@ public class Q2_Odev {
         /*
         Kullanicidan yeni ismler alip var olan bir array ye ekleyen bir method olusturun.
 
-        Kullanici yeni deger verdigi muddetce C10daki methodu kullanarak eklemeye devam edin
+        Kullanici yeni deger verdigi muddetceeklemeye devam edin
         kullanici q bastiginda arr nin son halini dondurun.
          */
 
