@@ -20,7 +20,7 @@ public class SampleQuestions {
         String str="Javacokkolay"
         Yinelenen karakterler : [a, o, k]
         İpucu: İçiçe for looplar, String Manupulations ve ifler kullanrak çözebilrsiniz.
-                    Stringdeki bir harfi Stringde bulunan diger harfler ile karşılaştırıpkonteynıra atacaksınız bu yüzden iç içe loop kullanmak mantıklı duruyor
+        Stringdeki bir harfi Stringde bulunan diger harfler ile karşılaştırıpkonteynıra atacaksınız bu yüzden iç içe loop kullanmak mantıklı duruyor
         -----------------------------------------------------------------------------------------------------------------
         Soru 31-)
         Kullanıcıdan Arrayin uzunlugunu isteyin.
