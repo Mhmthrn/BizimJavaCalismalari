@@ -40,7 +40,7 @@ public class Car {
         System.out.println(arb1);
 
         Car arb2= new Car("Mazda",2003);
-        System.out.println(arb2.modelYl);
+        System.out.println(arb2);
     }
 
 
