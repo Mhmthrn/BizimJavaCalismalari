@@ -22,31 +22,12 @@ public class Q1 {
         String ay=scan.next();
         int yil=scan.nextInt();
 
-        switch (ay){
-
-            case "ocak":
-            case "mart":
-            case "mayis":
-            case "temmuz":
-            case "agustos":
-            case "ekim":
-            case "aralik":
-                System.out.println(ay+ " "+yil+" 'da  31 gun vardir");
-                break;
-            case "nisan":
-            case "haziran":
-            case "eylul":
-            case "kasim":
-                System.out.println(ay+ " "+yil+" 'da  30 gun vardir");
-                break;
-            case "subat":
-                subatGunsayisi(yil);
-                break;
-
-            default:
-                System.out.println();
-
-
+        switch (ay) {
+            case "ocak", "mart", "mayis", "temmuz", "agustos", "ekim", "aralik" ->
+                    System.out.println(ay + " " + yil + " 'da  31 gun vardir");
+            case "nisan", "haziran", "eylul", "kasim" -> System.out.println(ay + " " + yil + " 'da  30 gun vardir");
+            case "subat" -> subatGunsayisi(yil);
+            default -> System.out.println();
         }
 
 
