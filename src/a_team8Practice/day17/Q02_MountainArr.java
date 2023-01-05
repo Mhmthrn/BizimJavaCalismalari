@@ -1,5 +1,7 @@
 package a_team8Practice.day17;
 
+import java.util.Arrays;
+
 public class Q02_MountainArr {
     /*
         Verilen herhangi bir arrayin Mountain Array olup olmadığını kontrol etmek için bir kod
@@ -15,17 +17,18 @@ public class Q02_MountainArr {
      */
     public static void main(String[] args) {
 
-        int[] arr1={4,6,8,5,3,2};
+        int[] arr1={4,6,8,5,3,2,1};
 
 
         int[] arr2={8,7,10,3,9,5};
 
         mountainArrMi(arr1);
+        mountainArrMi(arr2);
     }
 
     private static void mountainArrMi(int[] arr1) {
 
-        int enBuyukeleman=arr1[0];
+        int enBuyukeleman=0;
         int enBuyukelemanIndex=0;
 
 
@@ -35,41 +38,46 @@ public class Q02_MountainArr {
 
                 enBuyukelemanIndex=i;
                 enBuyukeleman=arr1[i];
-
             }
         }
 
-        int count=0;
-        for (int i = 0; i < enBuyukelemanIndex; i++) {
+        boolean kontrol=true;
 
-            if (arr1[i]<arr1[i+1]) {
-                count++;
+        for (int i = enBuyukelemanIndex; i <arr1.length -1; i++) {
+            if (arr1[i]> arr1[i+1]){
                 continue;
+            }else {
+                kontrol=false;
+                break;
+            }
+
+        }
+
+        if (kontrol){
+
+            for (int j =enBuyukelemanIndex; j>0 ; j--) {
+
+                if (arr1[j]>arr1[j-1]) {
+                    continue;
+
+                }else {
+                    kontrol=false;
+                    break;
+                }
             }
 
 
-
-        }
-        int count2=0;
-        for (int j =enBuyukelemanIndex+1; j <arr1.length-1 ; j++) {
-
-            if (arr1[j]>arr1[j+1]) {
-                count2++;
-
-            }
-        }
-            System.out.println(count);
-            System.out.println(count2);
-
-        if (count2==0 && count==0){
-            System.out.println("Mountain array degildir");
-        }else if ((count>=0 || count2==0) || (count2>=0 || count==0)){
-            System.out.println("Mountain array degildir");
-        }else {
-            System.out.println("Girilen array mountain dir.");
         }
 
+
+
+        if (kontrol) {
+            System.out.println(Arrays.toString(arr1) + " arrayi mountain arraydir");
+        } else {
+            System.out.println(Arrays.toString(arr1) + " arrayi mountain array değildir");
         }
 
     }
+
+}
 
